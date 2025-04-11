@@ -1,0 +1,234 @@
+.container nav{
+    color: #89eafd;
+    
+}
+
+  .container ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 50px;
+    
+    
+  }
+
+  .container > li {
+  .container ul > li {
+    display: flex;
+    flex-basis: 100px;  
+    justify-content: space-evenly;
+    align-items: center;
+  }
+    font-weight: 700;
+    font-size: large;
+}
+.container ul > li:hover {
+    background-color: #58757b;
+    color: #6c5a43;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.container ul > li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: large;
+}
+header {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px 50px 0;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+li{
+    list-style: none;
+    align-items: center;
+}
+
+
+#hero{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+img{
+
+    border-radius: 200px;
+}
+
+h1{
+    color: rgb(27, 59, 59);
+    text-align: center;
+    font-size: 80px;
+    
+}
+span{
+    color: rgb(48, 99, 104);
+}
+
+h3.title{
+    color: rgb(5, 5, 5);
+    font-size: 40px;
+    text-align: right;
+    margin-right: 100px;
+    float: right;
+    
+}
+section{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    padding: 10px;
+    border-radius: 0px;
+    text-decoration: dotted;
+}
+
+
+.about{
+   
+    color: rgb(5, 5, 5);
+    text-align: center;
+    overflow-wrap: break-word;
+    
+    
+    }
+    .about>h1{
+        text-align: center;
+        
+    }
+  
+.education{
+
+color: rgb(10, 11, 11);
+text-align: center;
+
+
+}
+.education h1{
+    
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: #020d0d;
+
+    
+}
+.skills {
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-size: medium;
+}
+ .box{
+    text-align: center;
+    color: rgb(55, 39, 9);
+    
+}
+
+.skills h1 {
+    color: #060606;
+
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+.skill li,p{
+    color: #060606;
+}
+
+
+
+.projects h1{
+    color: #080909;
+    
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+.projects img{
+    
+    height: 200px;
+    width: 200px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+  
+   
+}
+
+.project {
+    flex: 1;
+    max-width: 24%;
+    background-color: #050e08;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(22, 21, 21, 0.1);
+    text-align: center;
+}
+
+.project img {
+    width: 150px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #927651;
+}
+
+.project h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    margin-top: 2%;
+}
+
+.project p {
+    font-size: 14px;
+    color: #dff5f5;
+}
+.footer p{
+    color: #552020;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive Design for medium screens (up to 768px) */
+@media (max-width: 768px) {
+    .project {
+        max-width: 48%;
+    }
+}
+
+/* Responsive Design for small screens (up to 480px) */
+@media (max-width: 480px) {
+    .project {
+        max-width: 100%;
+    }
+}
+
+/* Responsive Design for large tablets and small desktops (481px to 1200px) */
+@media (min-width: 481px) and (max-width: 1200px) {
+    .project {
+        max-width: 80%;
+    }
+}
