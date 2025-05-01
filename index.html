@@ -5,29 +5,41 @@
         <meta name="google-site-verification" content="6ddsX2vNfqWyp8_YVU3yN0rLvvbBipUB5vip1aRhsWA" />
         <title>Mukit's Portfolio</title>
         <link rel="stylesheet" href="./assets/CSS/portfolio.css"/> 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <section class="header">
-        <header class="container" id="header-logo">
-            <div class="logo">
-                <img src="./assets/images/Logo 1.png" alt="Logo" width="100px" height="100px" loading="lazy">
-            </div>
-            <nav class="nav-container nav">
-                <ul class="nav-list">
-                    <li><a class="nav-link" href="#hero">Home</a></li>
-                    <li><a class="nav-link about-link" href="#about-me">About</a></li>
-                    <li><a class="education-link" href="#education">Education</a></li>
-                    <li><a class="nav-skill-link" href="#skill">Skills</a></li>
-                    <li><a class="projects-link" href="#projects">Projects</a></li>
-                    <li><a class="contact-link" href="#footer">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-    
+<div class="navbar">
+    <div class="navbar logo">
+        <a href="#hero">
+            <img src="./assets/images/Logo 1.png" alt="logo"
+            width="40" height="30">
+        </a>
+    </div>
+    <div class="nav-list">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
-    <body>
-
-        <section class="box name" id="hero">
+<section class="box name" id="hero">
             <h1 class="welcome-heading">Welcome to My Portfolio</h1>
             
         
@@ -35,7 +47,14 @@
             <h3 class="front-end-developer" style="text-align: center;">A Front-End Web Developer</h3>
         <section class="box " id="about-me"  >
         </section>
-
+        <form id="login-form">
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        
         <section>
             <div class="box about" id="about-me">
                 <p class="box about about-text"> Experience in creating user-friendly websites and web applications. I’m currently learning advanced full-stack development through practical projects and online courses like Udemy’s.I’m passionate about clean design, efficient code, and delivering projects on time.</p>
@@ -56,12 +75,12 @@
                             2018 <br>
                             Gpa- 4.65 out of 5.00</p>
                         
-                    <h3 style="color: rgb(2, 2, 2);">HSC</h3>
+                    <h3>HSC</h3>
                         <p>Chirirbandar Degree collage
                             <br>2023
                         <br>Gpa- 4.25/5.00</p>
                  
-                    <h3 style="color: rgb(7, 7, 7);">UNIVERSITY</h3>
+                    <h3>UNIVERSITY</h3>
                    
                     <p>Daffodile International University <br>June 2023- June 2027 (Present)</p>
             </div>     
@@ -104,49 +123,101 @@
                 </ul>
 
         </section>
+        
+        <section class="box projects " id="projects" >            <h1>Projects</h1>
+          <div class="card">
+              <div class="card">
+    <img src="./assets/images/Resume.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body ">
+      <h5 class="card-title">Digital Resume</h5>
 
-        <section class="box projects" id="projects" >
-            <h1>Projects</h1>             
-              <div class="projects-container">
-                <div class="project">
-                    <img src="./assets/images/Resume.png" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Digital Resume</p>
-                </div>
-                <div class="project">
-                    <img src="./assets/images/landing page.png" alt="Landing Page Project" height="200px" width="200px">
-                    <h3>Project 2</h3>
-                    <p>Landing Page</p>
-                </div>
-                <div class="project">
-                    <img src="./assets/images/birthday card.png" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Birthday Card</p>
-                </div>
-                <div class="project">
-                    <img src="./assets/images/movierankingproject.png" alt="Project 4">
-                    <h3>Project 4</h3>
-                    <p>Movie Ranking</p>
-                </div>
-                <div class="project">
-                    <img src="./assets/images/DramKit.png" alt="Project 5">
-                    <h3>Project 5</h3>
-                    <p>DramKit</p>
-                </div>
-                <div class="project">
-                    <img src="./assets/images/Portfolio 1st p.png" alt="Project 6">
-                    <img src="./assets/images/portfolio 2nd p.png" alt="Project 6">
-                    <h3>Project 6</h3>
-                    <p>Portfolio</p>
-                </div>
 
-            </div>
-        </section>
 
+      <a href="#" class="btn btn-primary">VISIT</a>
+    </div>
+  </div>
+              <div class="card">
+    <img src="./assets/images/Portfolio 1st p.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Portfolio Website</h5>
+
+      <a href="#" class="btn btn-primary">VISIT</a>
+    </div>
+  </div>
+              <div class="card">
+    <img src="./assets/images/birthday card.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Digital Ivitesion card</h5>
+
+
+
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+              <div class="card">
+    <img src="./assets/Screenshort/Screenshot 2025-04-20 at 8.42.10 PM.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">DramKit</h5>
+
+      <a href="https://mukithasan232.github.io/resum-aa/" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+              <div class="card">
+    <img src="./assets/images/motivational poster.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">poster</h5>
+
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+              <div class="card">
+    <img src="./assets/Screenshort/Screenshot 2025-04-20 at 8.55.08 PM.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Dice Game</h5>
+
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./assets/Screenshort/Screenshot 2025-05-01 at 1.51.35 AM.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">QR GENARATEOR</h5>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./assets/Screenshort/Screenshot 2025-04-20 at 8.55.08 PM.png" 
+class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Random Number</h5>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+          </div>
+ </section>
 
       <script src="./assets/index.js" charset="UTF-8">
 
       </script>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
     </body>
 
     
@@ -158,14 +229,17 @@
 <p>LinkedIn: <a href="https://www.linkedin.com/in/md-mukit-hasan-bd
 
     ">Mukit Hasan</a></p>
-<h2 style="color: rgb(10, 10, 10); text-align: center; ">Address</h2>
+<h2 style="text-align: center; ">Address</h2>
 <p>
   Chirirbandar-5240<br>
   Dinajpur<br />
   Bangladesh<br>
 </p>
-        <p class="footer-text"><span class="footer-highlight">
-            &copy; <span id="current-year"></span>
+<img src="./assets/images/qr_img.png" alt="Logo" width="100px" height="100px" loading="lazy">
+        </section>
+
+        <p class="footer-text"><span class="footer-text-highlight">
+            &copy; <span id="current-year">
             <br>Created By</span> :- MD MUKIT HASAN </p>
             
      </footer>
